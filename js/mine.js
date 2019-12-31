@@ -49,12 +49,12 @@ function sweep(obj) {
         }
     }
 
-    if (obj.innerHTML == '<i class="fab fa-font-awesome-flag"></i>') //己經標記了
+    if (obj.innerHTML == '<i class="fab fa-font-awesome-flag"></i>') //標記，加上旗子符號
         return;
 
     if (bombs[current_i][current_j] == 1) { //踩到地雷
-        clearTimeout(gameTimer);
-        obj.innerHTML = '<i class="fas fa-bomb"></i>';
+        clearTimeout(gameTimer); //時間停止
+        obj.innerHTML = '<i class="fas fa-bomb"></i>'; //加上炸彈符號
         alert('失敗!');
         return;
     }
@@ -95,10 +95,10 @@ var SetMinute = 0;
 function timer() {
     SetMinute += 1;
     var Check_i = document.getElementById("timer");
-    var Cal_Minute = Math.floor(Math.floor(SetMinute % 3600) / 60);
-    var Cal_Second = SetMinute % 60;
+    var Cal_Minute = Math.floor(Math.floor(SetMinute % 3600) / 60); //計算分
+    var Cal_Second = SetMinute % 60; //計算秒
     Check_i.innerHTML = Cal_Minute + "分" + Cal_Second + "秒";
-    gameTimer = setTimeout('timer()', 1000);
+    gameTimer = setTimeout('timer()', 1000); //每秒數一次
 }
 
 
