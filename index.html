@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>踩地雷</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 引用 Google 中文字型 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/title.css">
+</head>
+
+<body onload="run()" onContextMenu="window.event.returnValue=false">
+    <div class=" title">
+        <h1 class="title1"><i class="fas fa-bomb"></i>踩地雷<i class="fas fa-bomb"></i></h1>
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-1 title2"><i class="far fa-clock"></i></div>
+            <div id="timer" class="col-1 title2">0分0秒</div>
+            <div class="col-5"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div id="mine" class="col-6 center"></div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row title1">
+        <div class="col-5"></div>
+        <div class="col-1 title3 center"><i class="fas fa-bomb"></i></div>
+        <div id="remain" class="col-1 title3 center">0</div>
+        <div class="col-5"></div>
+    </div>
+    <div class="center">
+        <button id="btn"> 再玩一次</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/mine.js"></script>
+</body>
+
+</html>
