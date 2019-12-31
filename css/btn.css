@@ -1,0 +1,25 @@
+button {
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    border-color: #dbc2ac;
+}
+
+button[disabled=disabled] {
+    background-color: rgb(173, 253, 242);
+}
+
+body {
+    background-image: url(../img/001.jpg);
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+#btn {
+    width: 100px;
+    background-color: #9E9E9E;
+    border-radius: 7px;
+}
